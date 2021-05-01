@@ -1,8 +1,9 @@
 class Estados():
-    def __init__(self, nome_estado, sigla, url_imagem):
+    def __init__(self, nome_estado, sigla, url_imagem, lista_noticias):
         self.__nome_estado = nome_estado 
         self.__sigla = sigla 
         self.__url_imagem = url_imagem
+        self.__lista_noticias = lista_noticias
 
     def get_nome_estado(self):
         return self.__nome_estado
@@ -21,3 +22,7 @@ class Estados():
 
     def set_url_imagem(self, url_imagem):
         self.__url_imagem = url_imagem
+
+    def get_lista_noticias(self):
+        return self.__lista_noticias
+
