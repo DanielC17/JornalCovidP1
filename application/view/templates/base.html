@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%} {%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ url_for('index')}}">JORNAL COVID-19 P1</a></h1>
+    </header>
+    <br>
+    <br>
+    {% block content %}
+
+	{% endblock %}
+</body>
+</html>

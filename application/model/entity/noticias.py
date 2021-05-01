@@ -1,7 +1,7 @@
 class Noticias():
     def __init__(self, titulo, url_imagem, data, conteudo):
         self.__titulo = titulo
-        self.__url_imagem = imagem
+        self.__url_imagem = url_imagem
         self.__data = data
         self.__conteudo = conteudo
     
@@ -12,10 +12,10 @@ class Noticias():
     def get_url_imagem(self):
         return self.__url_imagem
 
-    def data(self):
+    def get_data(self):
         return self.__data
 
-    def conteudo(self):
+    def get_conteudo(self):
         return self.__conteudo
 
     def set_titulo(self, titulo):
